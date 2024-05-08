@@ -3,6 +3,9 @@ name = "make-sys"
 version = "0.1.0"
 edition = "2021"
 build = "build.rs"
+repository = "https://github.com/oknotokcomputer/make-sys"
+description = "A simple build script to generate bindings for make"
+license = "GNU General Public License v3.0"
 
 [dependencies]
 libc = "0.2.154"
