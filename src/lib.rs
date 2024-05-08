@@ -4,10 +4,9 @@
 
 use std::ffi;
 
-mod make_sys {
-    include!(concat!(env!("OUT_DIR"), "/make/src/bindings.rs"));
-}
-struct Floc(make_sys::floc);
+include!(concat!(env!("OUT_DIR"), "/make/src/bindings.rs"));
+
+struct Floc(floc);
 
 #[cfg(test)]
 mod tests {
@@ -15,7 +14,7 @@ mod tests {
 
     #[test]
     fn test_make() {
-        let mut floc = Floc(make_sys::floc {
+        let mut floc = Floc(floc {
             lineno: 0,
             filenm: std::ptr::null_mut(),
             offset: 0,

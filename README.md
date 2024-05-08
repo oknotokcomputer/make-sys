@@ -7,5 +7,5 @@
 
 ## Installation
 
-Currently installation assumes a debian base system, see [build.rs](build.rs) for details.
+Currently installation assumes a debian base system, see [build.rs](build.rs#L28) for details.
 
