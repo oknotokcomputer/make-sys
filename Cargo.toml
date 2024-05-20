@@ -8,7 +8,7 @@ description = "A simple build script to generate bindings for make"
 license = "GPL-3.0-only"
 
 [dependencies]
-libc = "0.2.154"
+libc = "0.2.155"
 
 [build-dependencies]
 bindgen = "0.69.4"
